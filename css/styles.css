@@ -419,11 +419,28 @@ footer {
     width: 100%;
 }
 
+/* Default: 2 columns for desktop */
 .game-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 40px;
     justify-items: center;
+}
+
+@media (max-width: 600px) {
+  .game-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  .game {
+    max-width: 98vw;
+    padding: 12px 0 10px 0;
+  }
+  .requirements {
+    max-width: 98vw;
+    font-size: 0.98em;
+    padding: 10px 4px;
+  }
 }
 @media (max-width: 600px) {
   header {
