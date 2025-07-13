@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>რჩევები | GAME REQS</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="fontawesome.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+      <div class="header-title-group">
+        <img src="images/tbc-logo.png" alt="TBC Logo" style="height:60px; margin-right:18px;">
+        <h1>GAME REQS</h1>
+      </div>
+      <nav>
+        <a href="index.html">თამაშები</a>
+        <a href="tips.html">რჩევები</a>
+        <a href="faq.html">FAQ</a>
+        <a href="about.html">ჩვენ შესახებ</a>
+        <a href="contact.html">კონტაქტი</a>
+      </nav>
+    </header>
+    <section id="tips">
+        <h2>სასარგებლო რჩევები</h2>
+        <div class="tips-list">
+          <div class="tip-card"><span class="tip-icon">🎮</span><strong>გრაფიკის დაქვეითება:</strong> თუ თამაში ჭედავს, სცადეთ გრაფიკის პარამეტრების დაქვეითება (Resolution, Shadows, Textures).</div>
+          <div class="tip-card"><span class="tip-icon">🛑</span><strong>დახურეთ ფონის პროგრამები:</strong> თამაშის დაწყებამდე დახურეთ არასაჭირო პროგრამები, რომ მეტი რესურსი დარჩეს თამაშისთვის.</div>
+          <div class="tip-card"><span class="tip-icon">🔄</span><strong>განაახლეთ დრაივერები:</strong> ვიდეო ბარათის და სისტემის დრაივერების განახლება ხშირად აუმჯობესებს წარმადობას.</div>
+          <div class="tip-card"><span class="tip-icon">⚡</span><strong>გამორთეთ Windows Game Mode:</strong> ზოგჯერ Game Mode შეიძლება შეაფერხოს FPS, სცადეთ გამორთოთ.</div>
+          <div class="tip-card"><span class="tip-icon">💾</span><strong>გამოიყენეთ SSD:</strong> თამაშის SSD-ზე დაყენება ამცირებს ჩატვირთვის დროს და ზოგჯერ ჭედვასაც.</div>
+        </div>
+    </section>
+    <footer class="main-footer">
+      <div class="footer-content">
+        <a href="https://www.tbcbank.ge/web/ka" target="_blank" class="tbc-logo-link">
+          <img src="images/tbc-logo.png" alt="TBC Logo" class="tbc-logo">
+        </a>
+        <div class="footer-texts">
+          <p>ჩვენი მისიაა, დაგეხმაროთ იპოვოთ სწორი ინფორმაცია თქვენი საყვარელი თამაშებისთვის!</p>
+          <a href="#top" class="back-to-top">ზემოთ დაბრუნება ↑</a>
+          <p>© <span id="year"></span> თამაშების მოთხოვნები. ყველა უფლება დაცულია.</p>
+        </div>
+      </div>
+    </footer>
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GAME REQS</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="fontawesome.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="header-title-group">
+        <img src="images/tbc-logo.png" alt="TBC Logo" style="height:60px; margin-right:18px;">
+        <h1>GAME REQS</h1>
+    </div>
+    <nav>
+        <a href="index.html">თამაშები</a>
+        <a href="tips.html">რჩევები</a>
+        <a href="faq.html">FAQ</a>
+        <a href="about.html">ჩვენ შესახებ</a>
+        <a href="contact.html">კონტაქტი</a>
+    </nav>
+</header>
+    <section id="about">
+        <h2>ჩვენ შესახებ</h2>
+        <div class="profile-cards">
+          <div class="faq-card"><span class="tip-icon">👤</span><div><strong>მე ვარ ლუკა გოგატიშვილი</strong><br>ეს თემა ავირჩიე იმიტომ, რომ ყველაზე ნაცნობი იყო ჩემთვის და ყველაზე მარტივად გასაგები.<br>ლექციების გავლის შემდეგ ძალიან ბევრი ვისწავლე და ძალიან მომეწონა. ყველას ვურჩევ, რომ სცადონ მსგავსი პროექტი!</div></div>
+          <div class="faq-card"><span class="tip-icon">🎮</span><div>მიყვარს ვიდეო თამაშები</div></div>
+          <div class="faq-card"><span class="tip-icon">💻</span><div>ვსწავლობ პროგრამირებას</div></div>
+          <div class="faq-card"><span class="tip-icon">🚀</span><div>მიზანი მაქვს, კიდე ბევრი "სკილ" შევისწავლო</div></div>
+        </div>
+    </section>
+    <footer class="main-footer">
+      <div class="footer-content">
+        <a href="https://www.tbcbank.ge/web/ka" target="_blank" class="tbc-logo-link">
+          <img src="images/tbc-logo.png" alt="TBC Logo" class="tbc-logo">
+        </a>
+        <div class="footer-texts">
+          <p>ჩვენი მისიაა, დაგეხმაროთ იპოვოთ სწორი ინფორმაცია თქვენი საყვარელი თამაშებისთვის!</p>
+          <a href="#top" class="back-to-top">ზემოთ დაბრუნება ↑</a>
+          <p>© <span id="year"></span> თამაშების მოთხოვნები. ყველა უფლება დაცულია.</p>
+        </div>
+      </div>
+    </footer>
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>

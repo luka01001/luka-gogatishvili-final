@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GAME REQS</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="header-title-group">
+        <img src="images/tbc-logo.png" alt="TBC Logo" style="height:60px; margin-right:18px;">
+        <h1>GAME REQS</h1>
+    </div>
+    <nav>
+        <a href="index.html">თამაშები</a>
+        <a href="tips.html">რჩევები</a>
+        <a href="faq.html">FAQ</a>
+        <a href="about.html">ჩვენ შესახებ</a>
+        <a href="contact.html">კონტაქტი</a>
+    </nav>
+</header>
+    <section id="contact">
+        <h2>კონტაქტი</h2>
+        <ul class="contact-list">
+            <li class="contact-card"><span class="tip-icon">✉️</span> ელ.ფოსტა: luka.gogatishvili@example.com</li>
+            <li class="contact-card"><span class="tip-icon">📞</span> ტელეფონი: +995 555 123 456</li>
+            <li class="contact-card"><span class="tip-icon">📍</span> მისამართი: თბილისი, საქართველო</li>
+        </ul>
+      
+        <div class="social-icons">
+          <a href="https://facebook.com" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://twitter.com" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="https://instagram.com" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://youtube.com" target="_blank" title="YouTube"><i class="fab fa-youtube"></i></a>
+        </div>
+    </section>
+   <footer class="main-footer">
+      <div class="footer-content">
+        <a href="https://www.tbcbank.ge/web/ka" target="_blank" class="tbc-logo-link">
+          <img src="images/tbc-logo.png" alt="TBC Logo" class="tbc-logo">
+        </a>
+        <div class="footer-texts">
+          <p>ჩვენი მისიაა, დაგეხმაროთ იპოვოთ სწორი ინფორმაცია თქვენი საყვარელი თამაშებისთვის!</p>
+          <a href="#top" class="back-to-top">ზემოთ დაბრუნება ↑</a>
+          <p>© <span id="year"></span> თამაშების მოთხოვნები. ყველა უფლება დაცულია.</p>
+        </div>
+      </div>
+    </footer>
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
