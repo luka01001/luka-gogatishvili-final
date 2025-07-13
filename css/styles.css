@@ -12,6 +12,9 @@
   font-size: 1.1em;
   box-shadow: 0 2px 16px #00ff9955;
   display: flex;
+.game-grid {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
   align-items: center;
   transition: box-shadow 0.15s;
 }
@@ -26,6 +29,9 @@
   font-size: 1.1em;
   box-shadow: 0 2px 16px #00ff9955;
   display: flex;
+.game {
+    width: 100%;
+}
   align-items: flex-start;
   gap: 12px;
   margin-bottom: 18px;
@@ -37,6 +43,11 @@
   background: linear-gradient(90deg, #181f2a 80%, #00ff99 100%);
   color: #fff;
   border-radius: 16px;
+.game img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 6/9;
+}
   padding: 14px 20px;
   font-size: 1.08em;
   box-shadow: 0 2px 16px #00ff9955;
@@ -52,6 +63,9 @@
   filter: drop-shadow(0 0 6px #00ff99);
 }
 header h1::before {
+.requirements {
+    width: 100%;
+}
     content: "🎮 ";
     color: #480080;
     font-size: 0.9em;
@@ -68,6 +82,19 @@ header h1::after {
   }
   20% {
     transform: scale(1.2);
+  .game-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  .game {
+    max-width: 98vw;
+    padding: 12px 0 10px 0;
+  }
+  .requirements {
+    max-width: 98vw;
+    font-size: 0.98em;
+    padding: 10px 4px;
+  }
   }
   40% {
     transform: scale(0.95);
