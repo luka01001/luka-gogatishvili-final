@@ -424,19 +424,91 @@ footer {
     grid-template-columns: repeat(2, 1fr);
     gap: 40px;
     justify-items: center;
-    align-items: stretch;
+}
+@media (max-width: 600px) {
+  header {
+    flex-direction: column;
+    padding: 18px 0 12px 0;
+    gap: 18px;
+    border-radius: 0 0 12px 12px;
+  }
+  .header-title-group {
+    flex-direction: column;
+    gap: 8px;
+    align-items: center;
+  }
+  nav {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
     width: 100%;
-    margin: 0 auto;
+    padding: 0 0 8px 0;
+  }
+  nav a {
+    font-size: 1em;
+    padding: 8px 12px;
+    width: 90vw;
+    text-align: center;
+  }
 }
 
-.tbc-logo {
-    width: 110px;
-    height: auto;
+@media (min-width: 601px) {
+  header {
+    flex-direction: row;
+    padding: 32px 0 24px 0;
+    gap: 60px;
+    border-radius: 0 0 24px 24px;
+  }
+  .header-title-group {
+    flex-direction: row;
+    gap: 24px;
+    align-items: center;
+  }
+  nav {
+    flex-direction: row;
+    gap: 28px;
+    align-items: center;
+    width: auto;
+    padding: 0;
+  }
+  nav a {
+    font-size: 1.1em;
+    padding: 10px 18px;
+    width: auto;
+    text-align: left;
+  }
 }
-.profile {
-    font-size: 1.2em;
-}
-.profile-list {
-    margin-top:12px;
+  .main-title {
     font-size: 2em;
-}
+  }
+  .tbc-logo {
+    height: 36px;
+  }
+  .footer-content {
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+    padding: 8px 0;
+  }
+  .footer-texts {
+    align-items: center;
+    font-size: 0.98em;
+    text-align: center;
+  }
+  .game-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  .game {
+    max-width: 98vw;
+    padding: 12px 0 10px 0;
+  }
+  .requirements {
+    max-width: 98vw;
+    font-size: 0.98em;
+    padding: 10px 4px;
+  }
+  footer {
+    padding: 8px 0;
+    font-size: 0.98em;
+  }
